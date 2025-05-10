@@ -25,7 +25,7 @@ local weaponDropdown = main:AddDropdown("WeaponOrder", {
     Title = "selecionar ordem de armas: ",
     Values = {"Gun", "Sword", "Fighting Style", "Fruit"},
     Multi = true,
-    Default = nil
+    Default = "Gun", "Sword", "Fighting Style", "Fruit"
 })
 
 weaponDropdown:OnChanged(function(value)
