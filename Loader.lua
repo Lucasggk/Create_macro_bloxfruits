@@ -11,12 +11,18 @@ local Window = Fluent:CreateWindow({
     IsDraggable = true
 })
 
-
+-- // variáveis // -- 
 
 local selectedWeapons = {}
 
+-- // Tabs // -- 
+
+local main = Window:AddTab({  Title = "macro settings", Icon = "settings"  })
+
+-- // scripts // -- 
+
 local weaponDropdown = main:AddDropdown("WeaponOrder", {
-    Title = "Select Weapon Order",
+    Title = "selecionar ordem de armas: ",
     Values = {"Gun", "Sword", "Fighting Style", "Fruit"},
     Multi = true,
     Default = nil
@@ -24,5 +30,5 @@ local weaponDropdown = main:AddDropdown("WeaponOrder", {
 
 weaponDropdown:OnChanged(function(value)
     selectedWeapons = value
-    print("Weapon order changed to:", table.concat(value, " > "))
+    print("Ordem dos atacks :", table.concat(value, " > "))
 end)
