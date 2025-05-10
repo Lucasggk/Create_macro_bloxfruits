@@ -8,7 +8,13 @@ Ensure the following equipment and mastery levels:
 - **Godhuman**: 350+ Mastery  
 - **Skull Guitar**: 300+ Mastery  
 - **Gravity Blade**: 250+ Mastery
-## Loadstring
+
+
+
+
+<h1 align="center"># Script</h1>
+
+
 
 ```lua
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
