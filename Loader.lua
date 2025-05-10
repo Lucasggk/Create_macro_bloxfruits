@@ -1,34 +1,56 @@
-local Fluent = loadstring(Game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))() 
+-- Serviços
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
 
-local Window = Fluent:CreateWindow({
-    Title = "Macro blox fruits",
-    SubTitle = "Feito por Lucas",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(540, 400),
-    Acrylic = false,
-    Theme = "Dark",
-    Center = true,
-    IsDraggable = true
-})
+-- Referências
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
 
--- // variáveis // -- 
+-- Configurações
+local searchRadius = 100
+local cameraOffset = Vector3.new(0, 5, -8)
 
-local selectedWeapons = {}
+-- Controle do loop
+local camLockConnection
 
--- // Tabs // -- 
+-- Função para encontrar o alvo mais próximo
+local function getNearestTarget()
+	local character = LocalPlayer.Character
+	if not character or not character:FindFirstChild("HumanoidRootPart") then return nil end
+	local root = character.HumanoidRootPart.Position
+	local closestTarget = nil
+	local shortestDistance = math.huge
 
-local main = Window:AddTab({  Title = "macro settings", Icon = "settings"  })
+	for _, v in pairs(workspace:GetDescendants()) do
+		if v:IsA("Model") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v ~= character then
+			local dist = (v.HumanoidRootPart.Position - root).Magnitude
+			if dist < shortestDistance and dist <= searchRadius and v.Humanoid.Health > 0 then
+				shortestDistance = dist
+				closestTarget = v
+			end
+		end
+	end
 
--- // scripts // -- 
+	return closestTarget
+end
 
-local weaponDropdown = main:AddDropdown("WeaponOrder", {
-    Title = "selecionar ordem de armas: ",
-    Values = {"Gun", "Sword", "Fighting Style", "Fruit"},
-    Multi = true,
-    Default = "Gun", "Sword", "Fighting Style", "Fruit"
-})
+-- Inicia o camera lock
+function StartCamLock()
+	if camLockConnection then return end -- já ativo
+	camLockConnection = RunService.RenderStepped:Connect(function()
+		local target = getNearestTarget()
+		local character = LocalPlayer.Character
+		if target and character and character:FindFirstChild("HumanoidRootPart") then
+			local originPos = character.HumanoidRootPart.Position + cameraOffset
+			local targetPos = target.HumanoidRootPart.Position
+			Camera.CFrame = CFrame.new(originPos, targetPos)
+		end
+	end)
+end
 
-weaponDropdown:OnChanged(function(value)
-    selectedWeapons = value
-    print("Ordem dos atacks :", table.concat(value, " > "))
-end)
+-- Para o camera lock
+function StopCamLock()
+	if camLockConnection then
+		camLockConnection:Disconnect()
+		camLockConnection = nil
+	end
