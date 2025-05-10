@@ -11,11 +11,11 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Combo: Phantom Warp
+<h1 align="center">Script</h1>
 
 ---
 
-<h1 align="center">Script</h1>
+## Combo: Portal, Godhuman, Skull Guitar and Gravity Blade 
 
 ```lua
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
