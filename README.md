@@ -1,5 +1,10 @@
-# Create_macro_bloxfruits
+# Create Macro - Blox Fruits
 
-## How to use
+## How to Use
 
-### Equip\nPortal > 300 Mastery\nGodhuman > 350 Mastery\nSkull Guitar > 350 Mastery\nGravity Blade > 
+Ensure the following equipment and mastery levels:
+
+- **Portal**: 300+ Mastery  
+- **Godhuman**: 350+ Mastery  
+- **Skull Guitar**: 300+ Mastery  
+- **Gravity Blade**: 250+ Mastery
