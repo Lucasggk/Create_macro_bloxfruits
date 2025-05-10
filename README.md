@@ -15,7 +15,7 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Combo: Portal, Godhuman, Skull Guitar and Gravity Blade 
+## Combo: 
 
 ```lua
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
