@@ -14,7 +14,7 @@ Ensure the following equipment and mastery levels:
 
 <h1 align="center">Script</h1>
 
-
+<h1 align="center">## Script</h1>
 
 ```lua
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
