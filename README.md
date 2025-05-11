@@ -1,3 +1,4 @@
+![Visualizações](https://komarev.com/ghpvc/?username=Lucasggk&label=VISITAS&color=green&style=plastic)
 # Portal Combo - BloxFruits
 
 ## How to Use: *use with support aimbot (redzhub)*
