@@ -14,9 +14,9 @@ Ensure the following equipment and mastery levels:
 ## Script
 
 ```lua
-getgenv().atacar_pessoas_aimlock = true -- [[ 
-If the script is true, it means that the aimlock used in some combos will only be for players. 
-If false, it will be for players and NPCs. 
-]] -- 
+getgenv().atacar_pessoas_aimlock = true --[[
+If this is true, the aimlock used in some combos will only target players.
+If false, it will target both players and NPCs.
+]]
 
-loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
+loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua", true))()
