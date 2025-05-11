@@ -21,7 +21,7 @@ If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE T
 
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua", true))()
 ```
---------
+---
 
 # Ice Combo - Blox Fruits
 
@@ -39,5 +39,10 @@ Ensure the following equipment and mastery levels:
 ## Script - Ice Combo
 
 ```lua
+getgenv().atpl = true --[[
+If this is true, the aimlock used in some combos will only target players.
+If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE TRUE).
+]]
+
 
 ```
