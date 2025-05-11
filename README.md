@@ -1,4 +1,4 @@
-# Portal Combo - Blox Fruits
+# Portal Combo - BloxFruits
 
 ## How to Use
 
@@ -23,7 +23,7 @@ loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw
 ```
 ---
 
-# Ice Combo - Blox Fruits
+# Ice Combo - BloxFruits
 
 ## How to Use
 
