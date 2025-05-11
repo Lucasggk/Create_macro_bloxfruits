@@ -1,4 +1,4 @@
-# Create Macro - Blox Fruits
+# Portal combo - Blox Fruits
 
 ## How to Use
 
