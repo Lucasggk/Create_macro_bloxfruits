@@ -38,7 +38,7 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Script - Ice Combo (You can escape but it's good if you catch it)
+## Script - Ice Combo (You can escape but it's good if you catch it in the Combo)
 
 ```lua
 getgenv().atpl = true --[[
