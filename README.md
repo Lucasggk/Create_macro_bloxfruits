@@ -8,7 +8,8 @@ Ensure the following equipment and mastery levels:
 - **Godhuman**: 350+ Mastery  
 - **Portal**: 300+ Mastery  
 - **Ghoul V3 or v4**
-
+- **Use points in:** Sword
+  
 ---
 
 ## Script - Portal Combo
@@ -29,10 +30,11 @@ loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw
 
 Ensure the following equipment and mastery levels:
 
--
--
--
--
+- **Rengoku:** 350 Mastery
+- **Godhuman:** 350 Mastery
+- **Ice:** 150 Mastery **Skill "V" awk **
+- **does not use race skills**
+- **Use points in:** Sword
 
 ---
 
