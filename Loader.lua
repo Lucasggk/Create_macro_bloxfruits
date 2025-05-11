@@ -1,5 +1,5 @@
-_Getgenv().atacar_pessoas_aimlock = ""
-local Aimc = _Getgenv().atacar_pessoas_aimlock -- true = apenas player, false = player e npc
+getgenv().atpl = ""
+local Aimc = getgenv().atpl -- true = apenas player, false = player e npc
 
 for _, gui in pairs(game.CoreGui:GetChildren()) do
     if gui:IsA("ScreenGui") and gui:FindFirstChildOfClass("TextButton") and gui:FindFirstChildWhichIsA("TextButton").Text == "Combo PvP" then
