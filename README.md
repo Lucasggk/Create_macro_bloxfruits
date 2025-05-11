@@ -19,7 +19,7 @@ If this is true, the aimlock used in some combos will only target players.
 If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE TRUE).
 ]]
 
-loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua", true))()
+loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Portal.Loader.lua", true))()
 ```
 ---
 
