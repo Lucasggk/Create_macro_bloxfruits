@@ -33,7 +33,7 @@ Ensure the following equipment and mastery levels:
 
 - **Rengoku:** 350 Mastery
 - **Godhuman:** 350 Mastery
-- **Ice:** 150 Mastery **Skill "V" awk **
+- **Ice:** 150 Mastery **Skill "V" awk**
 - **does not use race skills**
 - **Use points in:** Sword
 
