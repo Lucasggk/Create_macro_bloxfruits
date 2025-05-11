@@ -1,6 +1,6 @@
 # Portal Combo - BloxFruits
 
-## How to Use
+## How to Use: *use with support aimbot (redzhub)*
 
 Ensure the following equipment and mastery levels:
 
@@ -26,7 +26,7 @@ loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw
 
 # Ice Combo - BloxFruits
 
-## How to Use
+## How to Use: *use with support aimbot (redzhub)*
 
 Ensure the following equipment and mastery levels:
 
