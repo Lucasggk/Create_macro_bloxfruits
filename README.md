@@ -14,7 +14,7 @@ Ensure the following equipment and mastery levels:
 ## Script
 
 ```lua
-getgenv().atacar_pessoas_aimlock = true --[[
+getgenv().atpl = true --[[
 If this is true, the aimlock used in some combos will only target players.
 If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE TRUE).
 ]]
