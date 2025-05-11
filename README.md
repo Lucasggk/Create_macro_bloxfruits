@@ -7,7 +7,7 @@ Ensure the following equipment and mastery levels:
 - **Gravity Blade**: 250+ Mastery  
 - **Godhuman**: 350+ Mastery  
 - **Portal**: 300+ Mastery  
-- **Ghoul V3 or higher**
+- **Ghoul V3 or v4**
 
 ---
 
