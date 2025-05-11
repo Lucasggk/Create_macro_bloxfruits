@@ -4,18 +4,19 @@
 
 Ensure the following equipment and mastery levels:
 
-- **Portal**: 300+ Mastery  
+- **Gravity Blade**: 250+ Mastery  
 - **Godhuman**: 350+ Mastery  
-- **Skull Guitar**: 300+ Mastery  
-- **Gravity Blade**: 250+ Mastery
+- **Portal**: 300+ Mastery  
+- **Ghoul V3 or higher**
 
 ---
 
-<h1 align="center">Script</h1>
-
----
-
-## Combo: 
+## Script
 
 ```lua
+getgenv().atacar_pessoas_aimlock = true -- [[ 
+If the script is true, it means that the aimlock used in some combos will only be for players. 
+If false, it will be for players and NPCs. 
+]] -- 
+
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua"))()
