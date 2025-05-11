@@ -1,3 +1,5 @@
+![Lucas Script](https://chat.openai.com/share/file/0000000054a061f8bb7b6b957d9b9293)
+
 ![Visualizações](https://komarev.com/ghpvc/?username=Lucasggk&label=VISITAS&color=green&style=plastic)
 # Portal Combo - BloxFruits
 
