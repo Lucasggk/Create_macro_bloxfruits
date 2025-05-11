@@ -1,4 +1,4 @@
-# Portal combo - Blox Fruits
+# Portal Combo - Blox Fruits
 
 ## How to Use
 
@@ -11,7 +11,7 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Script - Portal combo
+## Script - Portal Combo
 
 ```lua
 getgenv().atpl = true --[[
@@ -22,4 +22,20 @@ If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE T
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Loader.lua", true))()
 ```
 
-## Script - Ice combo
+# Ice Combo - Blox Fruits
+
+## How to Use
+
+Ensure the following equipment and mastery levels:
+
+-
+-
+-
+
+---
+
+## Script - Ice Combo
+
+```lua
+
+```
