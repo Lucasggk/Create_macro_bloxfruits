@@ -121,23 +121,42 @@ local function UseSkillPress(skill, tempo)
     VirtualInput:SendKeyEvent(false, skill, false, game)
 end
 
+function raca()    
+     local args = {
+	"ActivateAbility"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommE"):FireServer(unpack(args))
+ end                 
+
 -- Ao clicar no botão, executa o combo
 Button.MouseButton1Click:Connect(function()      
-	   
-             EquipeItem("Gravity Blade")
-	     task.wait(0.05)
-	     UseSkill("Z")
-             task.wait(0.8)
-             EquipeItem("Portal-Portal")
-             UseSkill("Z") 
-             task.wait(1)  
-             EquipeItem("Gravity Blade") 
-             UseSkill("X")       
-             task.wait(1.8)
-             EquipeItem("Godhuman")          
-             UseSkill("X") task.wait(0.2)
-             EquipeItem("Godhuman")
-             UseSkillPress("C", 0.6)      
-             task.wait(1.6)   
-             
+EquipeItem("Gravity Blade")
+task.wait(0.05)
+UseSkill("Z")
+
+task.wait(0.8)
+EquipeItem("Portal-Portal")           
+task.wait(0.02)         
+UseSkill("Z")
+
+task.wait(1)
+EquipeItem("Gravity Blade")
+UseSkill("X")
+
+task.wait(1.8)
+EquipeItem("Godhuman")
+task.wait(0.05)
+UseSkill("X")
+
+task.wait(0.3)
+EquipeItem("Godhuman")
+UseSkillPress("C", 0.45)
+
+raca()
+task.wait(0.2)              
+EquipeItem("Gravity Blade")   
+task.wait(0.05)          
+UseSkill("Z")       
+task.wait(0.02)                  
+UseSkill("Z")          
 end)
