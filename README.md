@@ -12,7 +12,7 @@ Ensure the following equipment and mastery levels:
   
 ---
 
-## Script - Portal Combo
+## Script - Portal Combo (perfect)
 
 ```lua
 getgenv().atpl = true --[[
@@ -38,7 +38,7 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Script - Ice Combo
+## Script - Ice Combo (You can escape but it's good if you catch it)
 
 ```lua
 getgenv().atpl = true --[[
@@ -46,5 +46,5 @@ If this is true, the aimlock used in some combos will only target players.
 If false, it will target both players and NPCs (THIS COMBO DOES NOT USE, LEAVE TRUE).
 ]]
 
-
+loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Ice.Loader.lua", true))()
 ```
