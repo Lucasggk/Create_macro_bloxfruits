@@ -91,7 +91,7 @@ end
 
 --- Funções 
 
-local function EquipItem(Equipe)
+function EquipItem(Equipe)
     local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
     if humanoid then
         humanoid:UnequipTools()
@@ -111,7 +111,7 @@ end
 
 --- Funções 
 
-local function UseSkill(skill)
+function UseSkill(skill)
     local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(0.02)
