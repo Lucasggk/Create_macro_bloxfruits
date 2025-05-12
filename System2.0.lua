@@ -1,8 +1,13 @@
 --[[Como usar:
 
-EquipeUsedelay("Nome do item", "Skill", tempo)
+EquipUseDelay("Nome do item", "Skill", Delay para proximo ataque)
 exemplo: 
-EquipUsedelay("Godhuman", "X", 0.45)
+EquipUseDelay("Godhuman", "X", 0.45)
 
-Equipe 
+EquipUseHoldDelay("Nome do item", "Skill", tempo segurando, Delay para próximo ataque)
+
+
+
+
+
 ]]--
