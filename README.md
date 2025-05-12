@@ -1,4 +1,4 @@
-![Lucas Script](file_0000000054a061f8bb7b6b957d9b9293.png)
+![Lucas Script](logo.png)
 ![Visualizações](https://komarev.com/ghpvc/?username=Lucasggk&label=VISITAS&color=green&style=plastic)
 # Portal Combo - BloxFruits
 
