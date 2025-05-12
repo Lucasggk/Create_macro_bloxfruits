@@ -12,9 +12,13 @@ EquipItem("nome do item")
 exemplo:
 EquipItem("Godhuman")
 
-UseSkill("Skill")
+UseSkillDelay("Skill", Delay para próximo ataque)
 exemplo:
-UseSkill("X")
+UseSkill("X", 0.4)
+
+UseSkillPressDelay("Skill", tempo segurando o ataque, Delay para próximo ataque
+exemplo:
+UseSkillPressDelay("C", 0.5, 1.7)
 
 raca()
 ativa a habilidade da raca v3
