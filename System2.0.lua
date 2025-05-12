@@ -28,10 +28,12 @@ como executar?:
 
 --- Funções 
 
+--- Funções 
+
 local Player = game:GetService("Players").LocalPlayer
 
 function EquipUseDelay(Equipe, skill, delay)
-local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
+    local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
     if humanoid then
         humanoid:UnequipTools()
         task.wait(0.1)
@@ -42,12 +44,13 @@ local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Hu
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
+            task.wait(0.02)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
-  end
+    end
 
-  local VirtualInput = game:GetService("VirtualInputManager")
+    local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(0.01)
     VirtualInput:SendKeyEvent(false, skill, false, game)
@@ -56,9 +59,8 @@ end
 
 --- Funções 
 
-
 function EquipUseHoldDelay(Equipe, skill, segurando, delay)
-local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
+    local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
     if humanoid then
         humanoid:UnequipTools()
         task.wait(0.1)
@@ -69,12 +71,13 @@ local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Hu
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
+            task.wait(0.02)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
-  end
+    end
 
-  local VirtualInput = game:GetService("VirtualInputManager")
+    local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(segurando)
     VirtualInput:SendKeyEvent(false, skill, false, game)
@@ -84,10 +87,10 @@ end
 --- Funções 
 
 function raca()
- local args = {
- 	"ActivateAbility"
- }
- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommE"):FireServer(unpack(args))
+    local args = {
+        "ActivateAbility"
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommE"):FireServer(unpack(args))
 end 
 
 --- Funções 
@@ -104,6 +107,7 @@ function EquipItem(Equipe)
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
+            task.wait(0.02)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
@@ -117,4 +121,4 @@ function UseSkill(skill)
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(0.02)
     VirtualInput:SendKeyEvent(false, skill, false, game)
-end  
+end
