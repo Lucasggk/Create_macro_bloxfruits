@@ -116,4 +116,4 @@ local function UseSkill(skill)
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(0.02)
     VirtualInput:SendKeyEvent(false, skill, false, game)
-end
+end 
