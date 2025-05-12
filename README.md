@@ -93,5 +93,10 @@ explanation: holds the selected Skill for the selected time, time for next funct
 - put your ui name in:
 **getgenv().uiname = "your ui name"**
 
-- put your combo in the dk script part:
-****
+- put your combo in the script part:
+ 
+**Button.MouseButton1Click:Connect(function()**
+
+**--your combo script**
+
+**end)**
