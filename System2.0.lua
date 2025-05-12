@@ -28,6 +28,7 @@ como executar?:
 
 --- Funções 
 
+local Player = game:GetService("Players").LocalPlayer
 
 function EquipUseDelay(Equipe, skill, delay)
 local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
