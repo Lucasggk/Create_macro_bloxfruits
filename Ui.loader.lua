@@ -1,5 +1,5 @@
+local getgenv().uiname = ""
 local name = getgenv().uiname
-local script = getgenv().script
 
 for _, gui in pairs(game.CoreGui:GetChildren()) do
     if gui:IsA("ScreenGui") and gui:FindFirstChildOfClass("TextButton") and gui:FindFirstChildWhichIsA("TextButton").Text == name then
@@ -23,5 +23,5 @@ Button.Active = true
 Button.Draggable = true
 
 Button.MouseButton1Click:Connect(function()
-    loadstring(script)()
-  end)
+    
+end)
