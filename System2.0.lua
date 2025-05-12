@@ -52,7 +52,7 @@ function EquipUseDelay(Equipe, skill, delay)
 
     local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
-    task.wait(0.01)
+    task.wait(0.04)
     VirtualInput:SendKeyEvent(false, skill, false, game)
     task.wait(delay)
 end
@@ -116,9 +116,20 @@ end
 
 --- Funções 
 
-function UseSkill(skill)
+function UseSkillDelay(skill, Delay)
     local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
-    task.wait(0.02)
+    task.wait(0.04)
     VirtualInput:SendKeyEvent(false, skill, false, game)
+    task.wait(Delay)
+end
+
+--- Funções 
+
+local function UseSkillPressDelay(skill, tempo, delay)
+    local VirtualInput = game:GetService("VirtualInputManager")
+    VirtualInput:SendKeyEvent(true, skill, false, game)
+    task.wait(tempo)
+    VirtualInput:SendKeyEvent(false, skill, false, game)
+    task.wait(delay)
 end
