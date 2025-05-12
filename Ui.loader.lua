@@ -1,6 +1,12 @@
 local name = getgenv().uiname
 local script = getgenv().script
 
+for _, gui in pairs(game.CoreGui:GetChildren()) do
+    if gui:IsA("ScreenGui") and gui:FindFirstChildOfClass("TextButton") and gui:FindFirstChildWhichIsA("TextButton").Text == name then
+        gui:Destroy()
+    end
+end
+
 local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
 local Button = Instance.new("TextButton", ScreenGui)
 
