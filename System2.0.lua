@@ -30,7 +30,7 @@ como executar?:
 
 ]]--
 
---- Funções 
+--- Functions ---
 
 --- Funções 
 
