@@ -25,7 +25,7 @@ Button.Active = true
 Button.Draggable = true
 
 Button.MouseButton1Click:Connect(function()
-    EquipUseDelay("Ice-Ice",  "V", "2.25")                      
+EquipUseDelay("Ice-Ice",  "V", "2.25")                      
 EquipUseDelay("Gravity Blade", "X", 1.9)                          
 UseSkillDelay("Z", 1)                          
 EquipUseDelay("Godhuman", "Z", 1.7)
