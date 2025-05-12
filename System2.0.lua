@@ -44,7 +44,7 @@ function EquipUseDelay(Equipe, skill, delay)
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
-            task.wait(0.02)
+            task.wait(0.04)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
@@ -71,7 +71,7 @@ function EquipUseHoldDelay(Equipe, skill, segurando, delay)
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
-            task.wait(0.02)
+            task.wait(0.04)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
@@ -107,7 +107,7 @@ function EquipItem(Equipe)
             repeat
                 task.wait()
             until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
-            task.wait(0.02)
+            task.wait(0.04)
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
