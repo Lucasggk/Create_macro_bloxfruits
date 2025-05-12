@@ -11,6 +11,11 @@ EquipUseHoldDelay("Godhuman", "C", 0.5, 1.7)
 raca()
 ativa a habilidade da raca v3
 
+como executar?:
+
+1). coloque o loadstring deste script no inicio de seu script
+2). coloque o script dos EquipUse.. no lugar que quiser e execute
+
 ]]--
 
 --- Funções 
@@ -70,5 +75,8 @@ end
 --- Funções 
 
 function raca()
-
-end
+ local args = {
+ 	"ActivateAbility"
+ }
+ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommE"):FireServer(unpack(args))
+end 
