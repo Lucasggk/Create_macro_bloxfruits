@@ -13,13 +13,10 @@ ativa a habilidade da raca v3
 
 ]]--
 
+--- Funções 
 
 
-
-
-
-
-function(Equipe, skill, delay)
+function EquipUseDelay(Equipe, skill, delay)
 local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
     if humanoid then
         humanoid:UnequipTools()
@@ -30,7 +27,7 @@ local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Hu
             local start = tick()
             repeat
                 task.wait()
-            until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == nome) or tick() - start > 2
+            until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
         else
             warn(Equipe .. " não encontrada no inventário.")
         end
@@ -40,3 +37,38 @@ local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Hu
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(0.01)
     VirtualInput:SendKeyEvent(false, skill, false, game)
+    task.wait(delay)
+end
+
+--- Funções 
+
+
+function EquipUseHoldDelay(Equipe, skill, segurando, delay)
+local humanoid = Player.Character and Player.Character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid:UnequipTools()
+        task.wait(0.1)
+        local tool = Player.Backpack:FindFirstChild(Equipe)
+        if tool then
+            humanoid:EquipTool(tool)
+            local start = tick()
+            repeat
+                task.wait()
+            until (Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name == Equipe) or tick() - start > 2
+        else
+            warn(Equipe .. " não encontrada no inventário.")
+        end
+  end
+
+  local VirtualInput = game:GetService("VirtualInputManager")
+    VirtualInput:SendKeyEvent(true, skill, false, game)
+    task.wait(segurando)
+    VirtualInput:SendKeyEvent(false, skill, false, game)
+    task.wait(delay)
+end
+
+--- Funções 
+
+function raca()
+
+end
