@@ -90,5 +90,8 @@ explanation: holds the selected Skill for the selected time, time for next funct
 ---
 ## how to config:
 
-- at the end of the script there will be a place called:
+- put your ui name in:
+**getgenv().uiname = "your ui name"**
+
+- put your combo in the dk script part:
 ****
