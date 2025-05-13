@@ -75,22 +75,22 @@ explanation: Equipe item
 exemple: **UseSkillPressDelay("C", 0.5, 1.7)**
 
 explanation: holds the selected Skill for the selected time, time for next function  
-
+-
 - **raca()**
 explanation: activate your race v3
-
+-
 - **EqSword("Sword name")**
 
 exemple: **EqSword("Dual Cursed Katana")**
 
 explanation: Equip the selected sword inside the quotes 
-
+-
 - **EqSword("Gun name")**
 
 exemple: **EqGun("Skull Guitar")**
 
-explanation: Equip the selected Gun inside the quotes 
-
+explanation: Equip the selected Gun inside the quotes
+-
 - **EqStyle("Style name")**
 
 exemple: **EqStyle("Godhuman")**
@@ -117,6 +117,11 @@ explanation: Equip the selected Style inside the quotes
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Create_macro_bloxfruits/main/System2.0.lua"))()
 
 local uiname = "your uiname"
+EqSword("") -- fill with the sword used in the combo 
+
+EqGun("") -- fill with the weapon used in the combo/otherwise, don't change 
+
+EqStyle("") -- fill in the style used in the combo 
 
 for _, gui in pairs(game.CoreGui:GetChildren()) do
     if gui:IsA("ScreenGui") and gui:FindFirstChildOfClass("TextButton") and gui:FindFirstChildWhichIsA("TextButton").Text == uiname then
