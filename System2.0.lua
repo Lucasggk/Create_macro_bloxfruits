@@ -143,24 +143,30 @@ function UseSkillPressDelay(skill, tempo, delay)
 end
 
 function EqSword(name)
-    local args = {
-	"LoadItem",
-	name
-}
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    if name and name ~= "" and name ~= " " then
+        local args = {
+            "LoadItem",
+            name
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
 end
 
 function EqGun(name)
-    local args = {
-	"LoadItem",
-	name
-}
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    if name and name ~= "" and name ~= " " then
+        local args = {
+            "LoadItem",
+            name
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
 end
 
 function EqStyle(name)
-local args = {
-	name
-}
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
-end 
+    if name and name ~= "" and name ~= " " then
+        local args = {
+            "Buy" .. name
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
+end
