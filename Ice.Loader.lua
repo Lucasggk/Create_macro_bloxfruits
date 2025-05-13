@@ -26,7 +26,7 @@ Button.Draggable = true
 
 Button.MouseButton1Click:Connect(function()
 EquipUseDelay("Ice-Ice",  "V", "2.25")                      
-EquipUseDelay("Gravity Blade", "X", 1.9)                          
+EquipUseDelay("Gravity Blade", "X", 1.95)                          
 UseSkillDelay("Z", 1)                          
 EquipUseDelay("Godhuman", "Z", 1.7)
 UseSkillDelay("X", 0.4)                 
