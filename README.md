@@ -119,7 +119,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Create_macro
 local uiname = "your uiname"
 EqSword("") -- fill with the sword used in the combo 
 
-EqGun("") -- fill with the weapon used in the combo/otherwise, don't change 
+EqGun("") -- fill with the Gun used in the combo/otherwise, don't change 
 
 EqStyle("") -- fill in the style used in the combo 
 
