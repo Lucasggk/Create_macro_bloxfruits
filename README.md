@@ -96,8 +96,6 @@ explanation: Equip the selected Gun inside the quotes
 exemple: **EqStyle("Godhuman")**
 
 explanation: Equip the selected Style inside the quotes 
-
-
 ---
 ## how to config:
 
