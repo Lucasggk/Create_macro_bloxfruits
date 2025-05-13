@@ -23,6 +23,10 @@ UseSkillPressDelay("C", 0.5, 1.7)
 raca()
 ativa a habilidade da raca v3
 
+EqSword("Dual Cursed Katana")
+EqGun("Skull Guitar")
+Eqstyle("Godhuman") 
+
 como executar?:
 
 1). coloque o loadstring deste script no inicio de seu script
@@ -130,10 +134,33 @@ end
 
 --- Funções 
 
-local function UseSkillPressDelay(skill, tempo, delay)
+function UseSkillPressDelay(skill, tempo, delay)
     local VirtualInput = game:GetService("VirtualInputManager")
     VirtualInput:SendKeyEvent(true, skill, false, game)
     task.wait(tempo)
     VirtualInput:SendKeyEvent(false, skill, false, game)
     task.wait(delay)
 end
+
+function EqSword(name)
+    local args = {
+	"LoadItem",
+	name
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+end
+
+function EqGun(name)
+    local args = {
+	"LoadItem",
+	name
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+end
+
+function EqStyle(name)
+local args = {
+	name
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+end 
