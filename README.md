@@ -45,7 +45,6 @@ loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw
 
 ## how to use:
 
-### functions:
 ---
 - **EquipUseHoldDelay("name of the item to equip", "skill to use", time holding the attack, time for next function**
 
