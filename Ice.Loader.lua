@@ -3,6 +3,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Create_macro
 
 local uiname = "Best Ice combo"
 
+EqStyle("Godhuman")
+EqSword("Gravity Blade")
+EqGun("")
 for _, gui in pairs(game.CoreGui:GetChildren()) do
     if gui:IsA("ScreenGui") and gui:FindFirstChildOfClass("TextButton") and gui:FindFirstChildWhichIsA("TextButton").Text == uiname then
         gui:Destroy()
