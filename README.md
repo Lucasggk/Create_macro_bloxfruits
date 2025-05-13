@@ -75,11 +75,36 @@ explanation: Equipe item
 exemple: **UseSkillPressDelay("C", 0.5, 1.7)**
 
 explanation: holds the selected Skill for the selected time, time for next function  
+
+- **raca()**
+explanation: activate your race v3
+
+- **EqSword("Sword name")**
+
+exemple: **EqSword("Dual Cursed Katana")**
+
+explanation: Equip the selected sword inside the quotes 
+
+- **EqSword("Gun name")**
+
+exemple: **EqGun("Skull Guitar")**
+
+explanation: Equip the selected Gun inside the quotes 
+
+- **EqStyle("Style name")**
+
+exemple: **EqStyle("Godhuman")**
+
+explanation: Equip the selected Style inside the quotes 
+
+
 ---
 ## how to config:
 
 - put your ui name in:
 **uiname = "your ui name"**
+
+
 
 - put your combo in the script part:
  
