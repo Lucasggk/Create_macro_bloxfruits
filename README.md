@@ -35,7 +35,7 @@ Ensure the following equipment and mastery levels:
 
 ---
 
-## Script - Ice Combo (PERFECT)
+## Script - Ice Combo (PERFECT) | being redone 
 ```lua
 loadstring(game:HttpGet("https://github.com/Lucasggk/Create_macro_bloxfruits/raw/main/Ice.Loader.lua", true))()
 ```
